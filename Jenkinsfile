@@ -11,6 +11,9 @@ timestamps
     {
         try
         {
+            stage("SCM checkout"){
+                scmcheckout
+            }
             
        
         def BN = "${BuildNode}"
